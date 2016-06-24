@@ -1,0 +1,24 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:minWidth="294dp"
+                    android:minHeight="72dp"
+                    android:previewImage="@drawable/b8w"
+                    android:updatePeriodMillis="1"
+                    android:initialLayout="@layout/my_appwidget"
+                    >
+    <!--指定预览图-->
+    <!--android:previewImage="@drawable/preview"-->
+
+    <!--启动对应的appwidget-->
+    <!--android:configure="com.example.android.ExampleAppWidgetConfigure"-->
+
+    <!--锁屏的时候显示-->
+    <!--android:widgetCategory="home_screen|keyguard"-->
+
+    <!--Category状态的布局文件-->
+    <!--android:initialKeyguardLayout=""-->
+
+    <!--android:resizeMode="horizontal|vertical"-->
+    <!--对应的布局文件-->
+    <!--android:initialLayout="@layout/myappwidget"-->
+
+</appwidget-provider>

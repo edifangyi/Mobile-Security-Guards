@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/iv_atools_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_1"/>
+
+    <TextView
+        android:id="@+id/tv_atools_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="手机卫士"
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+
+</LinearLayout>

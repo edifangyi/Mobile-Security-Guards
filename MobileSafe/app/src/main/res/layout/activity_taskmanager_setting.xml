@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fangyi="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:baselineAligned="false"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/activity_taskmanager_settring_title"
+        style="@style/text_title_style"
+        android:text="进程设置"/>
+
+    <CheckBox
+        android:id="@+id/cb_show_system_process"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right|center_vertical"
+        android:text="当前状态：显示系统进程"
+        android:textColor="#000000"
+        android:textSize="25sp"/>
+
+    <CheckBox
+        android:id="@+id/cb_kill_process"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right|center_vertical"
+        android:text="当前状态：锁屏不杀死后台"
+        android:textColor="#000000"
+        android:textSize="25sp"/>
+
+
+</LinearLayout>

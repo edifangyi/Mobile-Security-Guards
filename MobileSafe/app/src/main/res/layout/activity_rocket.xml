@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/rocket_image"
+        android:src="@drawable/rocket_thrust1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv_bottom"
+        android:src="@drawable/rocket_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv_top"
+        android:src="@drawable/rocket_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_bottom"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv_je"
+        android:src="@drawable/rocket_platform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

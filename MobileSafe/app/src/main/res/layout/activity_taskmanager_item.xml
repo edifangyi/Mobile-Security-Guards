@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginRight="10dp"
+        android:id="@+id/iv_task_icon"
+        android:src="@drawable/ic_launcher"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_toRightOf="@+id/iv_task_icon"
+        android:id="@+id/tv_task_name"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:text="进程名称"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_meninfosize"
+        android:textColor="#88000000"
+        android:textSize="16sp"
+        android:text="内存大小"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_task_name"
+        android:layout_alignStart="@+id/tv_task_name"/>
+
+    <CheckBox
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cr_taskmanager_status"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+
+
+</RelativeLayout>

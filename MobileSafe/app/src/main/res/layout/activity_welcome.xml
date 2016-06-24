@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    android:id="@+id/rl_welcome_root">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/welcome_android"
+        />
+
+    <TextView
+        android:id="@+id/tv_welcome_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本：1.0"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:shadowColor="#B2DDE6"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_welcome_updateinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="下载最新版本：10%"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:shadowRadius="1"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fangyi="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/activity_setup1_title"
+        android:text="2.手机卡绑定"
+        style="@style/text_title_style"/>
+
+    <TextView
+        style="@style/text_content_style"
+        android:text="通过绑定SIM卡：\n下次重启手机如果发现SIM卡变化\n就会发送报警短信到指定电话号"/>
+
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="0.1dp"
+        android:background="#99000000"/>
+
+    <com.fangyi.mobilesafe.view.SettingItemView
+        fangyi:title="点击绑定SIM卡"
+        fangyi:update_off="SIM卡没有绑定"
+        fangyi:update_on="SIM卡已经绑定"
+        android:id="@+id/siv_lost_find_setup2_bind_sim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/voicemail_button_mxz"
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/voicemail_button_xz"
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/voicemail_button_mxz"
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/voicemail_button_mxz"
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/activity_setup2"/>
+        <ImageView
+            style="@style/button_imageviev_left_style"/>
+        <ImageView
+            style="@style/button_imageviev_right_style"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

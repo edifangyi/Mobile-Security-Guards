@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--属性的集合-->
+    <declare-styleable name="SettingItemView">
+        <!--定义一个String类型的属性-->
+        <!--<attr name="title" format="string"/>-->
+        <attr name="update_off" format="string" />
+        <attr name="update_on" format="string" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wh"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:onClick="rocket"
+        android:id="@+id/activity_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="手机安全小助手"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:background="@drawable/t9"/>
+
+    <com.fangyi.mobilesafe.view.FocusedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_title"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="哈哈哈哈哈`(*∩_∩*)′，，，，o(*≧▽≦)ツ快来下载  哈哈哈哈哈`(*∩_∩*)′，，，，o(*≧▽≦)ツ快来下载"
+        android:textColor="#ffffff"/>
+
+    <GridView
+        android:id="@+id/list_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_main_title"
+        android:layout_marginTop="40dp"
+        android:numColumns="3"
+        android:verticalSpacing="15dp">
+    </GridView>
+
+
+
+
+</RelativeLayout>

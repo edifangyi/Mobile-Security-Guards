@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="serverurl">https://raw.githubusercontent.com/edifangyi/edifangyi.github.io/master/updateinfo.html</string>
+</resources>

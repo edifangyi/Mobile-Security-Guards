@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂时不做，你打我啊"
+            android:textColor="#59C2FD"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_trafic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <SlidingDrawer
+        android:id="@+id/sliding_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:content="@+id/mycontent"
+        android:handle="@+id/myhandle">
+
+        <!--把手-->
+        <ImageView
+            android:id="@id/myhandle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_1" />
+
+        <!--内容-->
+        <LinearLayout
+            android:id="@id/mycontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#10000000"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我是抽屉里面内容" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="给SlidingDrawer设置方向可以修改弹出方向" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="open(); 可以设置是否默认开启" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="这控件过时了，你也别用了" />
+
+                <!--<AnalogClock-->
+                    <!--android:id="@+id/analogClock"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+                <!--<DigitalClock-->
+                    <!--android:id="@+id/digitalClock"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+                <TextClock
+                    android:format24Hour="MM/dd/yy h:mmaa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </SlidingDrawer>
+
+
+</LinearLayout>

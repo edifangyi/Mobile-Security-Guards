@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.fangyi.mobilesafe">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--读取电话的权限-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <!--读取联系人-->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!--短信-->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--GPS精确位置-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--GPS模糊位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!--震动-->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!--程序拨出电话-->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <!--归属地显示框拖动权限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!--打电话-->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!--读取写入电话日志-->
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <!--写联系人，低版本-->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <!--杀死进程-->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <!--创建快捷键-->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <!--获得栈 - 看门狗-->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!--获取缓存大小-->
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        <!--应用启动首页-->
+        <activity android:name=".activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!--主页面-->
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="com.fangyi.mobilesafe.home"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!--首次启动页面-->
+        <activity android:name=".activity.guide.Guide"/>
+        <!--设置中心-->
+        <activity android:name=".activity.setting.SettingActivity"/>
+
+        <!--手机防盗-->
+        <activity android:name=".activity.lostFind.LostFindActivity"/>
+        <activity android:name=".activity.lostFind.Setup1Activity"/>
+        <activity android:name=".activity.lostFind.Setup2Activity"/>
+        <activity android:name=".activity.lostFind.Setup3Activity"/>
+        <activity android:name=".activity.lostFind.Setup4Activity"/>
+        <activity android:name=".activity.lostFind.SelectContactActivity"/>
+        <activity android:name=".activity.lostFind.LockScreenActivity"/>
+
+        <!--高级功能-->
+        <activity android:name=".activity.atools.AToolsActivity"/>
+        <activity android:name=".activity.atools.NumberAddressQueryActivity"/>
+        <activity android:name=".activity.atools.CommonNumberQueryActivity"/>
+        <activity android:name=".activity.atools.EnterAppLock"/>
+        <activity android:name=".activity.atools.EnterAppLockWatcDogActivity"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"/>
+
+        <!--归属地位置拖动设置-->
+        <activity android:name=".activity.setting.DragViewActivity"/>
+
+        <!--小火箭-->
+        <activity
+            android:name=".rocket.Rocket"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!---通信卫士- 黑名单-->
+        <activity android:name=".activity.callsmssafe.SmsSecurityBlackListActivity"/>
+        <!--程序管理-->
+        <activity android:name=".activity.appmanager.AppManagerActivity"/>
+        <!--进程管理-->
+        <activity android:name=".activity.taskmanager.TaskManagerActivity"/>
+        <activity android:name=".activity.taskmanager.TaskManagerSettingActivity"/>
+        <!--缓存管理-->
+        <activity android:name=".activity.cleancache.CleanCacheActivity"/>
+        <!--流量管理-->
+        <activity android:name=".activity.trafficmanager.TrafficManagerActivity"/>
+        <!--病毒查杀-->
+        <activity android:name=".activity.antivirus.AntiVirusActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"/>
+
+        <!--启动检测服务-->
+        <receiver android:name=".receiver.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <!--短信收发监控-->
+        <receiver android:name=".receiver.SMSReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+
+        <!--设备管理员-->
+        <receiver
+            android:name=".receiver.MyAdmin"
+            android:description="@string/sample_device_admin_description"
+            android:label="@string/sample_device_admin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample"/>
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+        </receiver>
+
+        <!--AppWidget-->
+        <receiver android:name=".receiver.MyAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/example_appwidget_info"/>
+        </receiver>
+        <!--appwidget 发送出来的广播，执行删除动作-->
+        <receiver android:name=".receiver.KillProcessReceiver">
+            <intent-filter>
+                <action android:name="com.fangyi.mobilesafe.killprocess"/>
+            </intent-filter>
+        </receiver>
+
+        <!--打电话-->
+        <!--<receiver android:name=".receiver.OutCallReceiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.NEW_OUTGOING_CALL"/>-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--GPS检测-->
+        <service android:name=".service.GPSService"/>
+        <!--监听来电-->
+        <service android:name=".service.AddressService"/>
+        <!--短信拦截-->
+        <service android:name=".service.SmsSafeService"/>
+        <!--锁屏杀死后台服务 - 监听熄屏-->
+        <service android:name=".service.KillProcessService"/>
+        <!--AppWidget-->
+        <service android:name=".service.UpdateAppWidgetService"/>
+        <!--看门狗-->
+        <service android:name=".service.WatchDogSerivce"/>
+    </application>
+
+</manifest>

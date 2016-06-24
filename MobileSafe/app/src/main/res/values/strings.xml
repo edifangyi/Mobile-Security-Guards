@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">手机安全卫士</string>
+    <string name="sample_device_admin_description">设备管理员的描述信息，开启可以一键锁屏</string>
+    <string name="sample_device_admin">设备管理员的标题</string>
+</resources>
