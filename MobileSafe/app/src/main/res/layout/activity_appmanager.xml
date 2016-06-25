@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="病毒查杀"
+            android:text="应用管理"
             android:textColor="#ffffff"
             android:textSize="25sp" />
 

@@ -9,27 +9,38 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:src="@drawable/ic_launcher"/>
-
-    <TextView
-        android:id="@+id/tv_cleancache_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/iv_cleancache_icon"
-        android:text="应用名称"
-        android:textColor="#000000"
-        android:textSize="20sp"/>
 
     <TextView
         android:text="缓存大小"
         android:id="@+id/tv_cleancache"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/tv_cleancache_name"
+        android:layout_toEndOf="@+id/iv_cleancache_icon" />
+
+    <TextView
+        android:id="@+id/tv_cleancache_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="应用名称"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/iv_cleancache_icon"
+        android:layout_marginTop="9dp" />
+
+    <ImageView
         android:layout_alignParentRight="true"
+        android:id="@+id/iv_cleancacheiv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/alo"
         android:layout_centerVertical="true"
-        android:layout_marginRight="10dp" />
+        android:background="@drawable/cleancache_item"/>
 
 
 </RelativeLayout>

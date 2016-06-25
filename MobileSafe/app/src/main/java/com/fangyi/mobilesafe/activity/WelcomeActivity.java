@@ -23,6 +23,7 @@ import android.widget.Toast;
 import com.fangyi.mobilesafe.R;
 import com.fangyi.mobilesafe.activity.guide.Guide;
 import com.fangyi.mobilesafe.utils.StreamTools;
+import com.socks.library.KLog;
 
 import net.tsz.afinal.FinalHttp;
 import net.tsz.afinal.http.AjaxCallBack;
@@ -157,6 +158,8 @@ public class WelcomeActivity extends Activity {
         //设置版本号
         tvWelcomeVersion.setText("版本名：" + getVersionName());
 
+        KLog.e("================================" + getVersionName());
+
         //拷贝查询数据库
         copyDB("naddress.db");
         copyDB("commonnum.db");
@@ -275,6 +278,7 @@ public class WelcomeActivity extends Activity {
         //得到功能清单文件信息
         try {
             PackageInfo packageInfo = pm.getPackageInfo(getPackageName(), 0);
+            KLog.e("************************************"+ packageInfo.versionName);
             return packageInfo.versionName;
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();

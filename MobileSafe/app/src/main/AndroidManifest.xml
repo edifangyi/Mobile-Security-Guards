@@ -39,6 +39,10 @@
     <uses-permission android:name="android.permission.GET_TASKS"/>
     <!--获取缓存大小-->
     <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <!--缓存扫描-->
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <!--清除应用的缓存 需要系统应用权限-->
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES"/>
 
 
     <application

@@ -1,15 +1,19 @@
 package com.fangyi.mobilesafe.activity.cleancache;
 
+import android.content.Intent;
+import android.content.pm.IPackageDataObserver;
 import android.content.pm.IPackageStatsObserver;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageStats;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.RemoteException;
 import android.os.SystemClock;
+import android.provider.Settings;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.text.format.Formatter;
@@ -39,6 +43,8 @@ public class CleanCacheActivity extends AppCompatActivity {
     private ProgressBar pbCleancache;
     private TextView tvCleancacheStatus;
     private LinearLayout llCleancacheContaner;
+    // 存储带有缓存的应用的名称
+    private int cachePagenames = 0;
     PackageManager pm;
 
     private Handler handler = new Handler() {
@@ -52,19 +58,50 @@ public class CleanCacheActivity extends AppCompatActivity {
 
                     break;
                 case SCANING_FINISH://扫描结束
-                    tvCleancacheStatus.setText("扫描结束");
+                    tvCleancacheStatus.setText("扫描完毕：发现有" +cachePagenames+ "个缓存信息");
                     break;
                 case SHOW_CACHE://显示缓存信息
-                    CacheInfo cacheInfo = (CacheInfo) msg.obj;
+                    final CacheInfo cacheInfo = (CacheInfo) msg.obj;
                     View view = View.inflate(CleanCacheActivity.this, R.layout.activity_cleancache_item, null);
-
-
                     ImageView ivCleancacheIcon = (ImageView) view.findViewById(R.id.iv_cleancache_icon);
+                    ImageView ivCleancacheDelete = (ImageView) view.findViewById(R.id.iv_cleancacheiv_delete);
                     TextView tvCleancacheName = (TextView) view.findViewById(R.id.tv_cleancache_name);
                     TextView tvCleancache = (TextView) view.findViewById(R.id.tv_cleancache);
                     ivCleancacheIcon.setImageDrawable(cacheInfo.icon);
                     tvCleancacheName.setText(cacheInfo.name);
                     tvCleancache.setText(Formatter.formatFileSize(CleanCacheActivity.this, cacheInfo.cacheSize));
+
+
+
+                    ivCleancacheDelete.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Method[] methods = PackageManager.class.getMethods();
+                            for (Method method : methods) {
+                                if ("deleteApplicationCacheFiles".equals(method.getName())) {
+                                    try {
+                                        method.invoke(pm, cacheInfo.packname, new IPackageDataObserver.Stub() {
+
+                                            @Override
+                                            public void onRemoveCompleted(String packageName, boolean succeeded) throws RemoteException {
+
+                                            }
+
+
+                                        });
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                        //根据报名，跳转到对应的系统页面
+                                        Intent intent = new Intent();
+                                        intent.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                                        intent.setData(Uri.parse("package:" + cacheInfo.packname));
+                                        startActivity(intent);
+
+                                    }
+                                }
+                            }
+                        }
+                    });
 
                     llCleancacheContaner.addView(view, 0);
                     break;
@@ -116,7 +153,6 @@ public class CleanCacheActivity extends AppCompatActivity {
                         method.invoke(pm, packname, new MyIPackageStatsObserver());
 
 
-
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -135,12 +171,14 @@ public class CleanCacheActivity extends AppCompatActivity {
         public void onGetStatsCompleted(PackageStats pStats, boolean succeeded) throws RemoteException {
             long cacheSize = pStats.cacheSize;
             if (cacheSize > 0) {
+                cachePagenames++;
                 try {
                     CacheInfo cacheInfo = new CacheInfo();
                     cacheInfo.cacheSize = cacheSize;
                     cacheInfo.packname = pStats.packageName;
                     cacheInfo.name = pm.getApplicationInfo(pStats.packageName, 0).loadLabel(pm).toString();
                     cacheInfo.icon = pm.getApplicationInfo(pStats.packageName, 0).loadIcon(pm);
+
                     Message msg = Message.obtain();
                     msg.what = SHOW_CACHE;
                     msg.obj = cacheInfo;
@@ -157,6 +195,35 @@ public class CleanCacheActivity extends AppCompatActivity {
         String name;
         String packname;
         Drawable icon;
+    }
+
+
+    /**
+     * 1.功能相当于,点击了 应用程序信息 里面的 清楚缓存按钮，而非 清除数据
+     * <p>
+     * 2.功能相当于,删除了/data/data/packageName/cache 文件夹里面所有的东西
+     * <p>
+     * 3.需要权限 <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+     */
+    public void cleanAll(View view) {
+        Method[] methods = PackageManager.class.getMethods();
+        for (Method method : methods) {
+            if ("freeStorageAndNotify".equals(method.getName())) {
+                try {
+                    method.invoke(pm, Integer.MAX_VALUE, new IPackageDataObserver.Stub() {
+
+                        @Override
+                        public void onRemoveCompleted(String packageName, boolean succeeded) throws RemoteException {
+
+                        }
+
+
+                    });
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
 

@@ -30,6 +30,7 @@
 
 
     <ImageView
+        android:background="@drawable/rocket"
         android:visibility="invisible"
         android:id="@+id/iv_je"
         android:src="@drawable/rocket_platform"

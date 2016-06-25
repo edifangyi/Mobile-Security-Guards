@@ -25,30 +25,31 @@
             android:textSize="25sp" />
 
         <Button
+
             android:id="@+id/btn_cleancache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:onClick="addBlackNumber"
+            android:onClick="cleanAll"
             android:text="清理" />
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="38dp"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
 
         <ProgressBar
-            android:layout_alignParentBottom="true"
             android:id="@+id/pb_cleancache"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_width="match_parent"
             android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
             android:layout_gravity="center_horizontal"
             android:progressDrawable="@drawable/cleancache_progress" />
 
@@ -63,11 +64,12 @@
     </RelativeLayout>
 
     <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_marginTop="5dp">
+
         <LinearLayout
             android:id="@+id/ll_cleancache_contaner"
             android:layout_width="match_parent"
