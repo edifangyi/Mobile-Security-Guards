@@ -55,7 +55,7 @@
 
 ## 3. UI(不太会做图，只好抄了，侵权删)
 
-<img src="http://ww1.sinaimg.cn/mw690/648b709cjw1f57xabt3w7g20di0o0x6s.gif" width = "300" alt="图片名称" align=center />
+<img src="http://ww1.sinaimg.cn/large/648b709cjw1f57xabt3w7g20di0o0x6s.gif" width = "300" alt="图片名称" align=center />
 <img src="http://ww1.sinaimg.cn/large/648b709cjw1f57x9zdjx6g20di0o0e84.gif" width = "300" alt="图片名称" align=center />
 
 <img src="http://ww4.sinaimg.cn/large/648b709cjw1f57x8l9c46g20di0o01kz.gif" width = "300" alt="图片名称" align=center />
