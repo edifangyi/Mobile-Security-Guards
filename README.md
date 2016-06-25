@@ -8,7 +8,6 @@
     compile files('libs/afinal_0.5.1_bin.jar')
     compile 'com.jaredrummler:android-processes:1.0.8'
     compile 'com.github.zhaokaiqiang.klog:library:1.5.0'
-
 ```
 ## 2. 功能模块
 ### 手机防盗
@@ -51,36 +50,27 @@
 * 设置归属地显示框
 * 设置黑名单
 
-
 ### 小火箭
+
 
 ## 3. UI(不太会做图，只好抄了，侵权删)
 
- <img src="http://ww1.sinaimg.cn/mw690/648b709cjw1f57xabt3w7g20di0o0x6s.gif" width = "300" alt="图片名称" align=center />
+<img src="http://ww1.sinaimg.cn/mw690/648b709cjw1f57xabt3w7g20di0o0x6s.gif" width = "300" alt="图片名称" align=center />
+<img src="http://ww1.sinaimg.cn/large/648b709cjw1f57x9zdjx6g20di0o0e84.gif" width = "300" alt="图片名称" align=center />
 
- <img src="http://ww1.sinaimg.cn/large/648b709cjw1f57x9zdjx6g20di0o0e84.gif" width = "300" alt="图片名称" align=center />
+<img src="http://ww4.sinaimg.cn/large/648b709cjw1f57x8l9c46g20di0o01kz.gif" width = "300" alt="图片名称" align=center />
+<img src="http://ww1.sinaimg.cn/large/648b709cjw1f57xj55ioig20di0o0nph.gif" width = "300" alt="图片名称" align=center />
 
- <img src="http://ww4.sinaimg.cn/large/648b709cjw1f57x8l9c46g20di0o01kz.gif" width = "300" alt="图片名称" align=center />
+<img src="http://ww3.sinaimg.cn/large/648b709cjw1f57xaoaesgj20u01hcwre.jpg" width = "300" alt="图片名称" align=center />
+<img src="http://ww2.sinaimg.cn/mw690/648b709cjw1f57xando31j20u01hctlp.jpg" width = "300" alt="图片名称" align=center />
 
- <img src="http://ww1.sinaimg.cn/large/648b709cjw1f57xj55ioig20di0o0nph.gif" width = "300" alt="图片名称" align=center />
+<img src="http://ww1.sinaimg.cn/mw690/648b709cjw1f57xr4bi43j20u01hcqao.jpg" width = "300" alt="图片名称" align=center />
+<img src="http://ww2.sinaimg.cn/mw690/648b709cjw1f57xad1fxyj20u01hc10y.jpg" width = "300" alt="图片名称" align=center />
 
+<img src="http://ww1.sinaimg.cn/mw690/648b709cjw1f57xae30rnj20u01hctev.jpg" width = "300" alt="图片名称" align=center />
+<img src="http://ww1.sinaimg.cn/mw690/648b709cjw1f57xap981nj20u01hcn4e.jpg" width = "300" alt="图片名称" align=center />
 
- <img src="http://ww2.sinaimg.cn/mw690/648b709cjw1f57xando31j20u01hctlp.jpg" width = "300" alt="图片名称" align=center />
+<img src="http://ww4.sinaimg.cn/mw690/648b709cjw1f57xajfkw0j20u01hc0zq.jpg" width = "300" alt="图片名称" align=center />
+<img src="http://ww2.sinaimg.cn/mw690/648b709cjw1f57xaqbj4dj20u01hc7aw.jpg" width = "300" alt="图片名称" align=center />
 
- <img src="http://ww3.sinaimg.cn/large/648b709cjw1f57xaoaesgj20u01hcwre.jpg" width = "300" alt="图片名称" align=center />
-
- <img src="http://ww4.sinaimg.cn/mw690/648b709cjw1f57xam5lmcj20u00kegnt.jpg" width = "300" alt="图片名称" align=center />
-
- <img src="http://ww1.sinaimg.cn/mw690/648b709cjw1f57xr4bi43j20u01hcqao.jpg" width = "300" alt="图片名称" align=center />
-
- <img src="http://ww2.sinaimg.cn/mw690/648b709cjw1f57xad1fxyj20u01hc10y.jpg" width = "300" alt="图片名称" align=center />
-
- <img src="http://ww1.sinaimg.cn/mw690/648b709cjw1f57xae30rnj20u01hctev.jpg" width = "300" alt="图片名称" align=center />
-
- <img src="http://ww1.sinaimg.cn/mw690/648b709cjw1f57xap981nj20u01hcn4e.jpg" width = "300" alt="图片名称" align=center />
-
- <img src="http://ww4.sinaimg.cn/mw690/648b709cjw1f57xajfkw0j20u01hc0zq.jpg" width = "300" alt="图片名称" align=center />
-
- <img src="http://ww2.sinaimg.cn/mw690/648b709cjw1f57xaqbj4dj20u01hc7aw.jpg" width = "300" alt="图片名称" align=center />
-
-
+<img src="http://ww4.sinaimg.cn/mw690/648b709cjw1f57xam5lmcj20u00kegnt.jpg" width = "300" alt="图片名称" align=center />
