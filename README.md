@@ -55,3 +55,22 @@
 ### 小火箭
 
 ## 3. UI(不太会做图，只好抄了，侵权删)
+![](https://raw.githubusercontent.com/edifangyi/Mobile-Security-Guards/master/shows/Gif_20160625_211207.gif)
+
+![](https://github.com/edifangyi/Mobile-Security-Guards/raw/master/shows/Gif_20160625_003040.gif)
+
+
+![](https://raw.githubusercontent.com/edifangyi/Mobile-Security-Guards/master/shows/Gif_20160625_001725.gif)
+
+![](https://raw.githubusercontent.com/edifangyi/Mobile-Security-Guards/master/shows/Gif_20160625_213338.gif)
+
+![](https://raw.githubusercontent.com/edifangyi/Mobile-Security-Guards/master/shows/Screenshot_2016-06-25-20-55-38-948_%E6%89%8B%E6%9C%BA%E5%AE%89%E5%85%A8%E5%8D%AB%E5%A3%AB.png)
+
+![](https://raw.githubusercontent.com/edifangyi/Mobile-Security-Guards/master/shows/Screenshot_2016-06-25-20-54-48-194_%E6%89%8B%E6%9C%BA%E5%AE%89%E5%85%A8%E5%8D%AB%E5%A3%AB.png)
+
+![](https://raw.githubusercontent.com/edifangyi/Mobile-Security-Guards/master/shows/Screenshot_2016-06-25-20-54-58-859_%E6%89%8B%E6%9C%BA%E5%AE%89%E5%85%A8%E5%8D%AB%E5%A3%AB.png)
+
+![](https://raw.githubusercontent.com/edifangyi/Mobile-Security-Guards/master/shows/Screenshot_2016-06-25-20-55-17-961_%E6%89%8B%E6%9C%BA%E5%AE%89%E5%85%A8%E5%8D%AB%E5%A3%AB.png)
+
+![](https://raw.githubusercontent.com/edifangyi/Mobile-Security-Guards/master/shows/Screenshot_2016-06-25-21-35-54-029_%E6%89%8B%E6%9C%BA%E5%AE%89%E5%85%A8%E5%8D%AB%E5%A3%AB.png)
+
