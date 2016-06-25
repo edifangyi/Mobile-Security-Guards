@@ -8,29 +8,28 @@
     tools:context=".activity.MainActivity">
 
     <TextView
+        android:layout_marginTop="10dp"
         android:onClick="rocket"
         android:id="@+id/activity_main_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
-        android:text="手机安全小助手"
-        android:textSize="25sp"
         android:gravity="center"
         android:background="@drawable/t9"/>
 
-    <com.fangyi.mobilesafe.view.FocusedTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/activity_main_title"
-        android:ellipsize="marquee"
-        android:singleLine="true"
-        android:text="哈哈哈哈哈`(*∩_∩*)′，，，，o(*≧▽≦)ツ快来下载  哈哈哈哈哈`(*∩_∩*)′，，，，o(*≧▽≦)ツ快来下载"
-        android:textColor="#ffffff"/>
+    <!--<com.fangyi.mobilesafe.view.FocusedTextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/activity_main_title"-->
+        <!--android:ellipsize="marquee"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="哈哈哈哈哈`(*∩_∩*)′，，，，o(*≧▽≦)ツ快来下载  哈哈哈哈哈`(*∩_∩*)′，，，，o(*≧▽≦)ツ快来下载"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:id="@+id/focusedTextView" />-->
 
     <GridView
         android:id="@+id/list_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/activity_main_title"
         android:layout_marginTop="40dp"
         android:numColumns="3"
@@ -38,6 +37,21 @@
     </GridView>
 
 
+    <ImageView
+        android:src="@drawable/b4q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
 
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:id="@+id/iv_title"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

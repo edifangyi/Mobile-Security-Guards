@@ -17,6 +17,7 @@ import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -38,6 +39,7 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Random;
 
 /**
  * Created by FANGYI on 2016/5/26.
@@ -57,6 +59,7 @@ public class WelcomeActivity extends Activity {
 
     private TextView tvWelcomeVersion;
     private TextView tvWelcomeVpdateinfo;
+    private ImageView ivWelcome;
     /**
      * 升级的描述信息
      */
@@ -154,10 +157,12 @@ public class WelcomeActivity extends Activity {
     private void assignViews() {
         tvWelcomeVersion = (TextView) findViewById(R.id.tv_welcome_version);
         tvWelcomeVpdateinfo = (TextView) findViewById(R.id.tv_welcome_updateinfo);
+        ivWelcome = (ImageView) findViewById(R.id.iv_welcome);
         sp = getSharedPreferences("config", MODE_PRIVATE);
         //设置版本号
         tvWelcomeVersion.setText("版本名：" + getVersionName());
-
+        //
+        setWelcomeImg();
         KLog.e("================================" + getVersionName());
 
         //拷贝查询数据库
@@ -182,6 +187,16 @@ public class WelcomeActivity extends Activity {
             }, 2000);
         }
 
+    }
+
+    private static final  int ids[] = {R.drawable.welcome_android0, R.drawable.welcome_android1, R.drawable.welcome_android2};
+    /**
+     * 随机生成欢迎界面
+     */
+    private void setWelcomeImg() {
+        Random random = new Random();
+
+        ivWelcome.setBackgroundResource(ids[random.nextInt(3)]);
     }
 
     /**

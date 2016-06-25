@@ -6,9 +6,10 @@
     android:id="@+id/rl_welcome_root">
 
     <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/welcome_android"
+        android:id="@+id/iv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/welcome_android1"
         />
 
     <TextView

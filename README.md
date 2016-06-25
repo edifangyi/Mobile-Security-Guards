@@ -56,23 +56,31 @@
 
 ## 3. UI(不太会做图，只好抄了，侵权删)
 
- <img src="https://github.com/edifangyi/Mobile-Security-Guards/raw/master/shows/Gif_20160625_211207.gif" width = "300" alt="图片名称" align=center />
+ <img src="http://ww1.sinaimg.cn/mw690/648b709cjw1f57xabt3w7g20di0o0x6s.gif" width = "300" alt="图片名称" align=center />
 
- <img src="https://github.com/edifangyi/Mobile-Security-Guards/raw/master/shows/Gif_20160625_003040.gif" width = "300" alt="图片名称" align=center />
+ <img src="http://ww1.sinaimg.cn/large/648b709cjw1f57x9zdjx6g20di0o0e84.gif" width = "300" alt="图片名称" align=center />
 
- <img src="https://github.com/edifangyi/Mobile-Security-Guards/raw/master/shows/Gif_20160625_001725.gif" width = "300" alt="图片名称" align=center />
+ <img src="http://ww4.sinaimg.cn/large/648b709cjw1f57x8l9c46g20di0o01kz.gif" width = "300" alt="图片名称" align=center />
 
- <img src="https://github.com/edifangyi/Mobile-Security-Guards/raw/master/shows/Gif_20160625_213338.gif" width = "300" alt="图片名称" align=center />
+ <img src="http://ww1.sinaimg.cn/large/648b709cjw1f57xj55ioig20di0o0nph.gif" width = "300" alt="图片名称" align=center />
 
- <img src="https://raw.githubusercontent.com/edifangyi/Mobile-Security-Guards/master/shows/Screenshot_2016-06-25-20-55-38-948_%E6%89%8B%E6%9C%BA%E5%AE%89%E5%85%A8%E5%8D%AB%E5%A3%AB.png" width = "300" alt="图片名称" align=center />
 
- <img src="https://raw.githubusercontent.com/edifangyi/Mobile-Security-Guards/master/shows/Screenshot_2016-06-25-20-55-38-948_%E6%89%8B%E6%9C%BA%E5%AE%89%E5%85%A8%E5%8D%AB%E5%A3%AB.png" width = "300" alt="图片名称" align=center />
+ <img src="http://ww2.sinaimg.cn/mw690/648b709cjw1f57xando31j20u01hctlp.jpg" width = "300" alt="图片名称" align=center />
 
- <img src="https://raw.githubusercontent.com/edifangyi/Mobile-Security-Guards/master/shows/Screenshot_2016-06-25-20-54-48-194_%E6%89%8B%E6%9C%BA%E5%AE%89%E5%85%A8%E5%8D%AB%E5%A3%AB.png" width = "300" alt="图片名称" align=center />
+ <img src="http://ww3.sinaimg.cn/large/648b709cjw1f57xaoaesgj20u01hcwre.jpg" width = "300" alt="图片名称" align=center />
 
- <img src="https://raw.githubusercontent.com/edifangyi/Mobile-Security-Guards/master/shows/Screenshot_2016-06-25-20-54-58-859_%E6%89%8B%E6%9C%BA%E5%AE%89%E5%85%A8%E5%8D%AB%E5%A3%AB.png" width = "300" alt="图片名称" align=center />
+ <img src="http://ww4.sinaimg.cn/mw690/648b709cjw1f57xam5lmcj20u00kegnt.jpg" width = "300" alt="图片名称" align=center />
 
- <img src="https://raw.githubusercontent.com/edifangyi/Mobile-Security-Guards/master/shows/Screenshot_2016-06-25-20-55-17-961_%E6%89%8B%E6%9C%BA%E5%AE%89%E5%85%A8%E5%8D%AB%E5%A3%AB.png" width = "300" alt="图片名称" align=center />
+ <img src="http://ww1.sinaimg.cn/mw690/648b709cjw1f57xr4bi43j20u01hcqao.jpg" width = "300" alt="图片名称" align=center />
 
- <img src="https://raw.githubusercontent.com/edifangyi/Mobile-Security-Guards/master/shows/Screenshot_2016-06-25-21-35-54-029_%E6%89%8B%E6%9C%BA%E5%AE%89%E5%85%A8%E5%8D%AB%E5%A3%AB.png" width = "300" alt="图片名称" align=center />
+ <img src="http://ww2.sinaimg.cn/mw690/648b709cjw1f57xad1fxyj20u01hc10y.jpg" width = "300" alt="图片名称" align=center />
+
+ <img src="http://ww1.sinaimg.cn/mw690/648b709cjw1f57xae30rnj20u01hctev.jpg" width = "300" alt="图片名称" align=center />
+
+ <img src="http://ww1.sinaimg.cn/mw690/648b709cjw1f57xap981nj20u01hcn4e.jpg" width = "300" alt="图片名称" align=center />
+
+ <img src="http://ww4.sinaimg.cn/mw690/648b709cjw1f57xajfkw0j20u01hc0zq.jpg" width = "300" alt="图片名称" align=center />
+
+ <img src="http://ww2.sinaimg.cn/mw690/648b709cjw1f57xaqbj4dj20u01hc7aw.jpg" width = "300" alt="图片名称" align=center />
+
 

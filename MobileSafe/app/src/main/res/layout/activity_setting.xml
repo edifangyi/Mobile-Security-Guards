@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fangyi="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -28,43 +28,75 @@
 
     </RelativeLayout>
 
-
-
-    <com.fangyi.mobilesafe.view.SettingItemView
-        android:id="@+id/siv_update"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        fangyi:title="设置自动更新"
-        fangyi:update_off="当前自动更新已经关闭"
-        fangyi:update_on="当前自动更新已经开启" />
+        android:layout_below="@+id/rl"
+        android:orientation="vertical">
 
-    <com.fangyi.mobilesafe.view.SettingItemView
-        android:id="@+id/siv_showaddress"
-        android:layout_width="wrap_content"
+        <com.fangyi.mobilesafe.view.SettingItemView
+            android:id="@+id/siv_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fangyi:title="设置自动更新"
+            fangyi:update_off="当前自动更新已经关闭"
+            fangyi:update_on="当前自动更新已经开启" />
+
+        <com.fangyi.mobilesafe.view.SettingItemView
+            android:id="@+id/siv_showaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fangyi:title="设置归属地显示"
+            fangyi:update_off="当前归属地显示已经关闭"
+            fangyi:update_on="当前归属地显示已经开启" />
+
+        <com.fangyi.mobilesafe.view.SettingClickView
+            android:id="@+id/scv_changebg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fangyi:title="设置归属地显示" />
+
+        <com.fangyi.mobilesafe.view.SettingClickView
+            android:id="@+id/scv_changeposition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fangyi:title="设置归属地显示" />
+
+
+        <com.fangyi.mobilesafe.view.SettingItemView
+            android:id="@+id/siv_blacknumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fangyi:title="设置黑名单拦截"
+            fangyi:update_off="当前黑名单拦截已经关闭"
+            fangyi:update_on="当前黑名单拦截已经开启" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/ll"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        fangyi:title="设置归属地显示"
-        fangyi:update_off="当前归属地显示已经关闭"
-        fangyi:update_on="当前归属地显示已经开启" />
-
-    <com.fangyi.mobilesafe.view.SettingClickView
-        android:id="@+id/scv_changebg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        fangyi:title="设置归属地显示" />
-
-    <com.fangyi.mobilesafe.view.SettingClickView
-        android:id="@+id/scv_changeposition"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        fangyi:title="设置归属地显示" />
+        android:layout_alignParentBottom="true">
 
 
-    <com.fangyi.mobilesafe.view.SettingItemView
-        android:id="@+id/siv_blacknumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        fangyi:title="设置黑名单拦截"
-        fangyi:update_off="当前黑名单拦截已经关闭"
-        fangyi:update_on="当前黑名单拦截已经开启" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/of" />
 
-</LinearLayout>
+        <ImageView
+            android:id="@+id/iv_axt"
+            android:layout_width="10dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/axt" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

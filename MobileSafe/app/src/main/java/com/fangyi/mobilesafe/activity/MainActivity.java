@@ -31,6 +31,8 @@ import com.fangyi.mobilesafe.activity.trafficmanager.TrafficManagerActivity;
 import com.fangyi.mobilesafe.rocket.Rocket;
 import com.fangyi.mobilesafe.utils.MD5Utils;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
     private static String TAG = "MainActivity.clsss";
 
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     private GridView listMain;
     private SharedPreferences sp;
+    private ImageView ivTitle;
 
     private static final  String names[] = {"手机防盗", "通信卫士", "应用管理",
                                             "进程管理", "缓存管理", "手机杀毒",
@@ -51,9 +54,14 @@ public class MainActivity extends AppCompatActivity {
     private static final  int ids[] = {R.drawable.ic_1, R.drawable.ic_2, R.drawable.ic_3,
                                        R.drawable.ic_4, R.drawable.ic_5, R.drawable.ic_6,
                                        R.drawable.ic_7, R.drawable.ic_8, R.drawable.ic_9};
+    private static final  int titles[] = {R.drawable.b0, R.drawable.b1, R.drawable.b2};
+
+
     private void assignViews() {
         sp = getSharedPreferences("config", MODE_PRIVATE);
         listMain = (GridView) findViewById(R.id.list_main);
+        ivTitle = (ImageView) findViewById(R.id.iv_title);
+        setTitleImg();
         //设置适配器
         listMain.setAdapter(new HomeAdapter());
         listMain.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -102,6 +110,16 @@ public class MainActivity extends AppCompatActivity {
 
         });
     }
+
+    /**
+     * 随机生成欢迎语
+     */
+    private void setTitleImg() {
+        Random random = new Random();
+        ivTitle.setImageResource(titles[random.nextInt(3)]);
+        ivTitle.setMaxWidth(180);
+    }
+
 
     /**
      * 适配器
